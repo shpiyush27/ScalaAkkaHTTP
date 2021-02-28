@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5e15280-dcc4-45f5-a9e1-b2b2d71c5c13" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1p612Y6yohi5ReU0Nnqfk9O1muk" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.delivery.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/project" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="ScalaTest.OrderDeliveryRestApiTest.Couriers rest api should create courier via POST request&#10;Couriers rest api should update entity via PUT request&#10;Couriers rest api should return entity by id via GET request&#10;Couriers rest api should return all entities via GET request&#10;Orders rest api should create order via POST request&#10;Orders rest api should update entity via PUT request&#10;Orders rest api should return entity by id via GET request&#10;Orders rest api should return all entities via GET request&#10;Assignments rest api should show right assignments via GET request&#10;Retry Assignments rest api should show right assignments via GET request">
+    <configuration name="OrderDeliveryRestApiTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="orderdeliveryhandler" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.delivery.rest.OrderDeliveryRestApiTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderDeliveryRestApiTest.Couriers rest api should create courier via POST request&#10;Couriers rest api should update entity via PUT request&#10;Couriers rest api should return entity by id via GET request&#10;Couriers rest api should return all entities via GET request&#10;Orders rest api should create order via POST request&#10;Orders rest api should update entity via PUT request&#10;Orders rest api should return entity by id via GET request&#10;Orders rest api should return all entities via GET request&#10;Assignments rest api should show right assignments via GET request&#10;Retry Assignments rest api should show right assignments via GET request" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="orderdeliveryhandler" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.delivery.rest.OrderDeliveryRestApiTest" />
+      <option name="testName" value="Couriers rest api should create courier via POST request&#10;Couriers rest api should update entity via PUT request&#10;Couriers rest api should return entity by id via GET request&#10;Couriers rest api should return all entities via GET request&#10;Orders rest api should create order via POST request&#10;Orders rest api should update entity via PUT request&#10;Orders rest api should return entity by id via GET request&#10;Orders rest api should return all entities via GET request&#10;Assignments rest api should show right assignments via GET request&#10;Retry Assignments rest api should show right assignments via GET request" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderDeliveryRestApiTest.Retry Assignments rest api should show right assignments via GET request" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="orderdeliveryhandler" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.delivery.rest.OrderDeliveryRestApiTest" />
+      <option name="testName" value="Retry Assignments rest api should show right assignments via GET request" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="ScalaTest.OrderDeliveryRestApiTest.Couriers rest api should create courier via POST request&#10;Couriers rest api should update entity via PUT request&#10;Couriers rest api should return entity by id via GET request&#10;Couriers rest api should return all entities via GET request&#10;Orders rest api should create order via POST request&#10;Orders rest api should update entity via PUT request&#10;Orders rest api should return entity by id via GET request&#10;Orders rest api should return all entities via GET request&#10;Assignments rest api should show right assignments via GET request&#10;Retry Assignments rest api should show right assignments via GET request" />
+        <item itemvalue="ScalaTest.OrderDeliveryRestApiTest.Retry Assignments rest api should show right assignments via GET request" />
+        <item itemvalue="ScalaTest.OrderDeliveryRestApiTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="orderdeliveryhandler" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="orderdeliveryhandler [file:/Users/ppani/PiyushOwn/orderdeliveryhandler/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="orderdeliveryhandler-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/build.sbt" value="1734148504" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="2868604264" />
+        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="822058955" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Piyush/WS_HDLMFillingSpec/nds-fillingspec-stats" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/WS_HDLM_Compiler/ndshdlm-compiler" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/WS_NDSPIPELINES/pipelines" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/WS_Nds_Runner/nds-runner" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/WS_Runner/runner" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/WS_S3Lambda/ndshdlm-s3lambda" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/WS_Schema/ndshdlm-schema" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/WS_ndshdlm_tools/ndshdlm-tools" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/WS_ndshdlm_tools/ndshdlm_tools" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/akka-spark-pipeline-master" value="PREVIEW" />
+        <entry key="$USER_HOME$/Piyush/catalog-comparator" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Algos in Scala/algorithms-scala-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Scala Martin/example" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Scala Martin/forcomp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Scala Martin/funsets/funsets" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Scala Martin/objsets/objsets" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Scala Martin/patmat" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Scala Martin/recfun" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../deliveryhero-master" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5e15280-dcc4-45f5-a9e1-b2b2d71c5c13" name="Default Changelist" comment="" />
+      <created>1614488518965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614488518965</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/delivery/rest/OrderDeliveryRestAPI.scala</url>
+          <line>58</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/delivery/rest/OrderDeliveryRestAPI.scala</url>
+          <line>60</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
