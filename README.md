@@ -25,8 +25,8 @@ An entity that represents an assignment between a courier and an order, represen
 #### Tech Used : Spark, Cassandra, Akka, Akka HTTP, Circe, Lightbend Config and ScalaTest libraries.
 
 ## REST API Types
-- 1. REST API with Spark and Cassandra found `/v2/`
-- 2. In Memory REST API without Database involvement `/v1/`
+- 1. REST API with Spark and Cassandra found @ URL: `/v2/`
+- 2. In Memory REST API without Database involvement found @ URL: `/v1/`
 
 ## 1. REST API with Spark and Cassandra
 
