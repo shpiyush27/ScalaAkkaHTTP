@@ -22,9 +22,16 @@ An entity that represents an assignment between a courier and an order, represen
 - **courier_id** uuid Unique identifier of courier
 - **order_id** uuid Unique identifier of order
 
-#### Tech Used : Akka, Akka HTTP, Circe, Lightbend Config and ScalaTest libraries.
+#### Tech Used : Spark, Cassandra, Akka, Akka HTTP, Circe, Lightbend Config and ScalaTest libraries.
 
-## REST API
+## REST API Types
+- 1. REST API with Spark and Cassandra found `/v2/`
+- 2. In Memory REST API without Database involvement `/v1/`
+
+## 1. REST API with Spark and Cassandra
+
+### Pre-Requisites
+- Either the local machine or the docker container should have pre-installed Apache Spark and Cassandra
 
 This service offers a HTTP api with the following features:
 - Add one or more courier to list of couriers
@@ -32,6 +39,203 @@ This service offers a HTTP api with the following features:
 - Add order to the system
 - Get the courier assigned for an order
 - Get the list of orders a courier has to deliver
+
+**URL**:   `/v2/couriers`
+
+**Method**: `POST`
+
+**Data Parameters in JSON**:
+- **courier_id** uuid Unique identifier
+- **name** string Name of the courier
+- **zone** enum ‘N’, ‘S’, ‘E’ or ‘W’
+- **is_available** boolean Flag indicating if the current entity is available or not
+
+#### Success Response
+
+**Code**: 200
+
+**Content**: Courier entity in JSON format
+
+#### Error Response
+
+If one of the required fields is missing:
+
+**Code**: 400
+
+**Content**: Error message
+
+### Update a courier by id.
+
+**URL**:   `/v2/couriers/:id`
+
+**Method**: `PUT`
+
+**Data Parameters in JSON**:
+
+- **name** string Name of the courier
+- **zone** enum ‘N’, ‘S’, ‘E’ or ‘W’
+- **is_available** boolean Flag indicating if the current entity is available or not
+
+
+All fields are optional.
+
+#### Success Response
+
+**Code**: 200
+
+**Content**: Courier entity in JSON format
+
+#### Error Response
+If no courier by id is found.
+
+**Code**: 404
+
+### Get Courier by id.
+
+**URL**:   `/v2/couriers/:id`
+
+**Method**: `GET`
+
+#### Success Response
+
+**Code**: 200
+
+**Content**: Couriers entity in JSON format
+
+#### Error Response
+If no courier by id is found.
+
+**Code**: 404
+
+### List all couriers.
+
+**URL**:   `/v2/couriers`
+
+**Method**: `GET`
+
+#### Success Response
+
+**Code**: 200
+
+**Content**: List of couriers entities in JSON format
+
+
+### Create a new Order.
+
+**URL**:   `/v2/orders`
+
+**Method**: `POST`
+
+**Data Parameters in JSON**:
+- **order_id** uuid Unique identifier
+- **details** string Details of order
+- **zone** enum ‘N’, ‘S’, ‘E’ or ‘W’
+- **added_at** timestamp Timestamp indicating when the order was placed
+
+#### Success Response
+
+**Code**: 200
+
+**Content**: Order entity in JSON format
+**Note**: Order is created even if there are no couriers available with -1 courier id assignment. **retryAssignment** rest APi can be used to retry whenever a courier becomes available.
+
+#### Error Response
+
+If one of the required fields is missing:
+
+**Code**: 400
+
+**Content**: Error message
+
+### Update an order by id.
+
+**URL**:   `/v2/orders/:id`
+
+**Method**: `PUT`
+
+**Data Parameters in JSON**:
+
+- **details** string Details of order
+- **zone** enum ‘N’, ‘S’, ‘E’ or ‘W’
+- **added_at** timestamp Timestamp indicating whenthe order was placed
+
+
+All fields are optional.
+
+#### Success Response
+
+**Code**: 200
+
+**Content**: Order entity in JSON format
+
+#### Error Response
+If no order by id is found.
+
+**Code**: 404
+
+### Get Order by id.
+
+**URL**:   `/v2/orders/:id`
+
+**Method**: `GET`
+
+#### Success Response
+
+**Code**: 200
+
+**Content**: Orders entity in JSON format
+
+#### Error Response
+If no order by id is found.
+
+**Code**: 404
+
+### List all orders.
+
+**URL**:   `/v2/orders`
+
+**Method**: `GET`
+
+#### Success Response
+
+**Code**: 200
+
+**Content**: List of orders entities in JSON format
+
+### Get all assignments.
+
+**URL**:   `/v2/assignments`
+
+**Method**: `GET`
+
+#### Success Response
+
+**Code**: 200
+**Content**: List of assignments in JSON format
+
+### Retry and get all assignments.
+
+**URL**:   `/v2/retryAssignments`
+
+**Method**: `GET`
+
+#### Success Response
+
+**Code**: 200
+**Content**: List of updated/retried assignments in JSON format
+
+
+### Health check.
+
+**URL**:   `/v2/healthcheck`
+
+**Method**: `GET`
+
+#### Success Response
+
+**Code**: 200
+
+## 2. In Memory REST API without Database involvement
 
 ### Create a new Courier.
 
@@ -221,16 +425,6 @@ If no order by id is found.
 
 
 ### Health check.
-
-**URL**:   `/v1/healthcheck`
-
-**Method**: `GET`
-
-#### Success Response
-
-**Code**: 200
-
-### Health check. 
 
 **URL**:   `/v1/healthcheck`
 
