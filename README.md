@@ -1,7 +1,8 @@
 # Order Delivery Handler Scala Akka HTTP
 
 ## Introduction
-An Order delivery Handler for below Data model
+An Order delivery Handler for below Data model  
+**Github** - `https://github.com/shpiyush27/orderdeliveryhandler`
 
 ### Courier
 An entity that handles deliveries, defined by the following properties:
@@ -26,7 +27,11 @@ An entity that represents an assignment between a courier and an order, represen
 
 ## REST API Types
 1. REST API with Spark and Cassandra found @ URL: `/v2/`
+    - Scala Test Result Snapshot using [CassandraOrderDeliveryRestApiTest.scala](src/test/scala/com/delivery/rest/CassandraOrderDeliveryRestApiTest.scala)
+    ![ALT](src/main/resources/CassandraOrderDeliveryRestApiTest.png)
 2. In Memory REST API without Database involvement found @ URL: `/v1/`
+    - Scala Test Result Snapshot using [InMemOrderDeliveryRestApiTest.scala](src/test/scala/com/delivery/rest/InMemOrderDeliveryRestApiTest.scala)
+    ![ALT](src/main/resources/InMemOrderDeliveryRestApiTest.png)
 
 ## 1. REST API with Spark and Cassandra
 
