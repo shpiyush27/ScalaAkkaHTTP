@@ -32,6 +32,22 @@ An entity that represents an assignment between a courier and an order, represen
 
 ### Pre-Requisites
 - Either the local machine or the docker container should have pre-installed Apache Spark and Cassandra
+### Local Machine Setup
+#### Installing Cassandra
+- wget https://downloads.apache.org/cassandra/4.0-beta4/apache-cassandra-4.0-beta4-bin.tar.gz
+- tar -xvzf apache-cassandra-4.0-beta4-bin.tar.gz
+- Add these two lines in your .bash_profile `export CASSANDRA_HOME=/Users/user/cassandra/apache-cassandra-4.0-beta4` and  `export PATH=$CASSANDRA_HOME/bin:$PATH`
+- Restart terminal and type `cassandra` to start the DB server on localhost
+#### Installing SPARK
+- Use homebrew to install spark `brew cask install spark`, you can tap on specific versions as well.
+#### Spark Cassandra Connector JAR Deployment
+- git clone https://github.com/datastax/spark-cassandra-connector.git
+- cd spark-cassandra-connector
+- sbt/sbt clean
+- sbt/sbt assembly
+- cp target/scala-2.12/spark-cassandra-connector-assembly-3.0.0-44-ga9c531fd.jar $SPARK_HOME/jars/
+- Note: - There should be a copy of `spark-cassandra-connector-assembly-3.0.0-44-ga9c531fd.jar` inside `orderdeliverhandler` project path `orderdeliverhandler/lib` as present in this project
+
 
 This service offers a HTTP api with the following features:
 - Add one or more courier to list of couriers
