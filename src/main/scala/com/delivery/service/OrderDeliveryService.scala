@@ -15,13 +15,13 @@ object CourierService {
   class CourierService[F[_]](courierRepo: ICourierRepository[F])(
     implicit M: Monad[F]) {
     def newCourier(name: String,
-                   zone: Char,
+                   zone: String,
                    is_available: Boolean): F[Courier] =
       courierRepo.create(name, zone, is_available)
 
     def updateCourier(courier_id: Long,
                       name: Option[String] = None,
-                      zone: Option[Char] = None,
+                      zone: Option[String] = None,
                       is_available: Option[Boolean] = None
                      ): F[Option[Courier]] = {
       (for {
@@ -41,7 +41,7 @@ object CourierService {
 
     def getAll(): F[List[Courier]] = courierRepo.getAll()
 
-    def getAvailableByZone(z: Char): F[List[Courier]] = courierRepo.getAvailableByZone(z)
+    def getAvailableByZone(z: String): F[List[Courier]] = courierRepo.getAvailableByZone(z)
 
 
     def deleteCourier(id: Long): F[Option[Courier]] = {
@@ -59,13 +59,13 @@ object OrderService {
   class OrderService[F[_]](orderRepo: IOrderRepository[F])(
     implicit M: Monad[F]) {
     def newOrder(details: String,
-                 zone: Char,
+                 zone: String,
                  added_at: String): F[Order] =
       orderRepo.create(details, zone, added_at)
 
     def updateOrder(order_id: Long,
                     details: Option[String] = None,
-                    zone: Option[Char] = None,
+                    zone: Option[String] = None,
                     added_at: Option[String] = None
                    ): F[Option[Order]] = {
       (for {

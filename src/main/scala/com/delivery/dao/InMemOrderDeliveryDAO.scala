@@ -20,11 +20,11 @@ object InMemCourierDAO {
     override def getAll(): Id[List[Courier]] =
       couriers.values.toList
 
-    override def getAvailableByZone(z: Char): Id[List[Courier]] =
+    override def getAvailableByZone(z: String): Id[List[Courier]] =
       couriers.values.filter(o => o.zone.equals(z) && o.is_available).toList
 
     override def create(name: String,
-                        zone: Char,
+                        zone: String,
                         is_available: Boolean): Id[Courier] = {
       val courier = Courier(
         courier_id = currentId,
@@ -60,7 +60,7 @@ object InMemOrderDAO {
       orders.values.toList
 
     override def create(details: String,
-                        zone: Char,
+                        zone: String,
                         added_at: String): Id[Order] = {
       val order = Order(
         order_id = currentId,

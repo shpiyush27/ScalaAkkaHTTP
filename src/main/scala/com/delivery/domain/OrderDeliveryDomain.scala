@@ -19,22 +19,22 @@ object OrderDeliveryDomain {
 
   case class Courier(courier_id: Long,
                      name: String,
-                     zone: Char,
+                     zone: String,
                      is_available: Boolean)
 
   case class CourierOptional(courier_id: Long,
                      name: Option[String],
-                     zone: Option[Char],
+                     zone: Option[String],
                      is_available: Option[Boolean])
 
   case class Order(order_id: Long,
                    details: String,
-                   zone: Char,
+                   zone: String,
                    added_at: String)
 
   case class OrderOptional(order_id: Long,
                    details: Option[String],
-                   zone: Option[Char],
+                   zone: Option[String],
                    added_at: Option[String])
 
   case class Assignment(order_id: Long,

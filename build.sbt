@@ -23,23 +23,23 @@ libraryDependencies ++= Seq(
   "io.circe" %% "circe-parser"
 ).map(_ % circeVersion)
 
-/*
-// TODO
 val sparkVersion = "3.0.0-preview2"
 val appDependencies = Seq(
-  "com.datastax.spark" %% "spark-cassandra-connector" % "3.0.0-beta"
+  "com.datastax.spark" %% "spark-cassandra-connector" % "3.0.0-44"
 )
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-streaming" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion
 )
+// https://mvnrepository.com/artifact/com.fasterxml.uuid/java-uuid-generator
+libraryDependencies += "com.fasterxml.uuid" % "java-uuid-generator" % "3.1.0"
 libraryDependencies += "log4j" % "log4j" % "1.2.14"
 // https://mvnrepository.com/artifact/com.github.jnr/jnr-posix
 libraryDependencies += "com.github.jnr" % "jnr-posix" % "3.0.61"
 // https://mvnrepository.com/artifact/joda-time/joda-time
 libraryDependencies += "joda-time" % "joda-time" % "2.10.6"
-*/
+
 
 
 dockerBaseImage := "openjdk:8-jre-alpine"

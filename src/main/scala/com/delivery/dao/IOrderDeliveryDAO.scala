@@ -9,11 +9,11 @@ object ICourierDAO {
 
     def getAll(): F[List[Courier]]
 
-    def getAvailableByZone(z: Char): F[List[Courier]]
+    def getAvailableByZone(z: String): F[List[Courier]]
 
     def create(
                 name: String,
-                zone: Char,
+                zone: String,
                 is_available: Boolean
               ): F[Courier]
 
@@ -32,7 +32,7 @@ object IOrderDAO {
 
     def create(
                 details: String,
-                zone: Char,
+                zone: String,
                 added_at: String
               ): F[Order]
 
